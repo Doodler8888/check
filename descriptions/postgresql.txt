@@ -1,8 +1,0 @@
-- To enter the postger console:
-  sudo -u postgres psql
-
-- Check users (console):
-  \du
-
-- Check databases (console):
-  \l
