@@ -1,17 +1,18 @@
 import std/terminal
 
 proc ln*() =
+
+  stdout.write("\n")
   stdout.styledWriteLine(fgGreen, "    - Create a symbolic link to a file or directory:")
   stdout.styledWrite(fgRed, "      ln ")
   stdout.write(" [FULL]/path/to/file_or_directory [FULL]/path/to/symlink")
+  stdout.write("\n")
   stdout.write("\n")
   stdout.write("\n")
 
   stdout.styledWriteLine(fgGreen, "    - Create a hard link to a file:")
   stdout.styledWrite(fgRed, "      ln ")
   stdout.write(" [FULL]/path/to/file [FULL]/path/to/hardlink")
-  stdout.write("\n")
-  stdout.write("\n")
 
   stdout.resetAttributes()
 

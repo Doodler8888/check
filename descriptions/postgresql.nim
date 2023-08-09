@@ -1,6 +1,8 @@
 import std/terminal
 
 proc postgresql*() =
+
+    stdout.write("\n")
     stdout.styledWriteLine(fgGreen, "    - To enter the postger console:")
     stdout.styledWriteLine(fgRed, "      sudo -u postgres psql")
     stdout.write("\n")
