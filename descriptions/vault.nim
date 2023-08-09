@@ -1,6 +1,7 @@
 import std/terminal
 
 proc vault*() =
+    stdout.write("\n")
     stdout.styledWriteLine(fgGreen, "    - Show the list of vault paths:")
     stdout.styledWriteLine(fgRed, "      vault secrets list")
     stdout.write("\n")
