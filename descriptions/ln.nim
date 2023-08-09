@@ -13,6 +13,9 @@ proc ln*() =
   stdout.styledWriteLine(fgGreen, "    - Create a hard link to a file:")
   stdout.styledWrite(fgRed, "      ln ")
   stdout.write(" [FULL]/path/to/file [FULL]/path/to/hardlink")
+  stdout.write("\n")
+  stdout.write("\n")
+
 
   stdout.resetAttributes()
 

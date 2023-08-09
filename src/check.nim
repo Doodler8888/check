@@ -12,4 +12,4 @@ if paramCount() > 0:
   of "postgresql", "psql", "postgres":
     postgresql()
   else:
-    echo "No such function: ", functionName
+    echo "Incorrect input: ", functionName
