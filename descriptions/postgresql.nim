@@ -1,17 +1,15 @@
-import std/terminal
+import std/terminal, ../src/termlib
 
 proc postgresql*() =
 
-    stdout.write("\n")
+    nL()
     stdout.styledWriteLine(fgGreen, "    - To enter the postger console:")
     stdout.styledWriteLine(fgRed, "      sudo -u postgres psql")
-    stdout.write("\n")
-    stdout.write("\n")
+    nL(2)
     
     stdout.styledWriteLine(fgGreen, "    - Check users (console):")
     stdout.styledWriteLine(fgRed, "      \\du")
-    stdout.write("\n")
-    stdout.write("\n")
+    nL(2)
     
     stdout.styledWriteLine(fgGreen, "    - Check databases (console):")
     stdout.styledWriteLine(fgRed, "      \\l")

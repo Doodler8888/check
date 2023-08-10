@@ -1,21 +1,16 @@
-import std/terminal
+import std/terminal, ../src/termlib
 
 proc ln*() =
 
-  stdout.write("\n")
+  nL()
   stdout.styledWriteLine(fgGreen, "    - Create a symbolic link to a file or directory:")
   stdout.styledWrite(fgRed, "      ln ")
-  stdout.write(" [FULL]/path/to/file_or_directory [FULL]/path/to/symlink")
-  stdout.write("\n")
-  stdout.write("\n")
-  stdout.write("\n")
-
+  w(" [FULL]/path/to/file_or_directory [FULL]/path/to/symlink")
+  nL(3)
   stdout.styledWriteLine(fgGreen, "    - Create a hard link to a file:")
   stdout.styledWrite(fgRed, "      ln ")
-  stdout.write(" [FULL]/path/to/file [FULL]/path/to/hardlink")
-  stdout.write("\n")
-  stdout.write("\n")
-
+  w(" [FULL]/path/to/file [FULL]/path/to/hardlink")
+  nL(2)
 
   stdout.resetAttributes()
 

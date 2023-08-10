@@ -1,24 +1,19 @@
-import std/terminal
+import std/terminal, ../src/termlib 
 
 proc nim*() =
-    stdout.write("\n")
+    nL()
     stdout.styledWriteLine(fgGreen, "    - Compile the code:")
     stdout.styledWrite(fgRed, "      nim c -d:release ")
-    stdout.write("myprogram.nim |[1]")
-    stdout.write("\n")
-    stdout.write("\n")
-    stdout.write("\n")
+    w("myprogram.nim |[1]")
+    nL(3)
 
     stdout.styledWriteLine(fgGreen, "    - Run the code:")
     stdout.styledWrite(fgRed, "      nim r ")
-    stdout.write("myprogram.nim")
-    stdout.write("\n")
-    stdout.write("\n")
-    stdout.write("\n")
+    w("myprogram.nim")
+    nL(3)
 
   
-    stdout.write("    1.The -d:release flag tells Nim to compile in release mode, which applies\n")
-    stdout.write("      optimizations and omits debugging information. This makes the resulting\n")
-    stdout.write("      binary faster and smaller.\n")
-    stdout.write("\n")
-    stdout.write("\n")
+    w("    1.the -d:release flag tells nim to compile in release mode, which applies\n")
+    w("      optimizations and omits debugging information. this makes the resulting\n")
+    w("      binary faster and smaller.\n")
+    nL(2)
