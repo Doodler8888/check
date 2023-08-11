@@ -1,0 +1,13 @@
+
+
+[GREEN]   - To enter the postgres console:
+[RED]     sudo -u[END] [BLUE]postgres [RED]psql
+                                  
+                                  
+[GREEN]   - Check users (console):
+[RED]     \du
+                                  
+                                  
+[GREEN]   - Check databases (console):
+[RED]     \l
+
