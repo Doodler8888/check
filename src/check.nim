@@ -26,7 +26,7 @@ if paramCount() > 0:
     else:
       descriptionName = paramStr(1) & ".txt"
 
-  let descriptionFilePath = joinPath(joinPath(parentDir(getCurrentDir()), "descriptions"), descriptionName)
+  let descriptionFilePath = joinPath(joinPath(parentDir(parentDir(getAppFilename())), "descriptions"), descriptionName)
   if descriptionFilePath.fileExists():
     let descriptionText = readFile(descriptionFilePath)
     displayDescription(descriptionText)

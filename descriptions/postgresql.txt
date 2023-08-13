@@ -1,7 +1,7 @@
 
 
 [GREEN]   - To enter the postgres console:
-[RED]     sudo -u[END] [BLUE]postgres [RED]psql
+[RED]     sudo -u[END] postgres [RED]psql
                                   
                                   
 [GREEN]   - Check users (console):

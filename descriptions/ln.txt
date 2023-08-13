@@ -1,5 +1,5 @@
 
 
    [GREEN]Create a symbolic link to a file or directory:
-   [RED]ln[END] [BLUE]full/path/to/file_or_directory full/path/to/symlink
+   [RED]ln[END] full/path/to/file_or_directory full/path/to/symlink
 
