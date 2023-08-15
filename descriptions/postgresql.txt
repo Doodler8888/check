@@ -1,13 +1,54 @@
 
 
-[GREEN]   - To enter the postgres console:
+[GREEN]   - Enter the postgres console:
 [RED]     sudo -u[END] postgres [RED]psql
+
+
+
+[GREEN]   - Enter the console as a usual user:
+[RED]     psql -U [END]username databasename [BLUE]|[4] 
                                   
+
                                   
 [GREEN]   - Check users (console):
 [RED]     \du
+[BLUE]   or
+[RED]     psql -U [END]username [RED]-d[END] databasename [RED]-c[END] "\du"
+
                                   
                                   
 [GREEN]   - Check databases (console):
 [RED]     \l
+[BLUE]   or
+[RED]     psql -l
 
+
+
+[GREEN]   - Create a database:
+[RED]     createdb [END]databsename [BLUE]|[1]
+
+
+
+[GREEN]   - Create a user:
+[RED]     CREATE ROLE[END] username [RED]WITH LOGIN PASSWORD [END]'your_password'[RED]; [BLUE]|[2]
+[RED]     ALTER ROLE [END]username [RED]CREATEDB; [BLUE]|[3]
+
+
+
+[BLUE]   1.It will use the current user of the terminal to create a database.
+     So if you use this command and the current user doesn't exist for postgres, 
+     it wont work.
+
+[BLUE]   2.Identifiers (like table names, column names, user names, etc.) and 
+     keywords don't require quotes unless they conflict with reserved keywords, 
+     contain spaces, or use mixed-case/capital letters that you want to preserve.
+     In such cases, double quotes (" ") are used.
+
+[BLUE]   3.[RED]ALTER ROLE [END][BLUE]modifies the attributes of an existing role.
+     [RED]CREATEDB[END] [BLUE]is an attribute that grants a current user permission
+     to create databases and delete its own ones.
+
+[BLUE]   4. I need to specify a database. If i don't do that, the system will try
+     connect to a database with the same name. That's why i can connect to the
+     console as admin user without specifying a database, postgresql creates
+     a database with the same admin name by default.
