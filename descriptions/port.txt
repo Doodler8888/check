@@ -1,0 +1,8 @@
+
+
+[RED]   sudo lsof -i -nP | awk [END]'/name/'
+
+
+
+[RED]   ps aux | grep [END]'name'
+

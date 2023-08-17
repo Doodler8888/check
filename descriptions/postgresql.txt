@@ -35,6 +35,11 @@
 
 
 
+[GREEN]   - Postgres config is in:[END]
+     /var/lib/postgres/data/pg_hba.conf
+
+
+
 [BLUE]   1.It will use the current user of the terminal to create a database.
      So if you use this command and the current user doesn't exist for postgres, 
      it wont work.
