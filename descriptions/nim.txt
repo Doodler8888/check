@@ -1,12 +1,19 @@
 
 
 [GREEN]   - Compile the code:
-[RED]     nim c -d:release [END]myprogram.nim [BLUE]|[1]
+[RED]     nim c -d:release [END]appname [BLUE]|[1]
                          
                          
                          
 [GREEN]   - Run the code:
 [RED]     nim r [END]myprogram.nim
+
+
+
+[GREEN]   - Compile for debugging:
+[RED]     nim c -g [END]appname [BLUE]
+   then[END]
+     run the app using [RED]gdb
 
 
  

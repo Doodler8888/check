@@ -10,7 +10,7 @@
                                   
 
                                   
-[GREEN]   - Check users (console):
+[GREEN]   - Check users and global attributes/roles (console):
 [RED]     \du
 [BLUE]   or
 [RED]     psql -U [END]username [RED]-d[END] databasename [RED]-c[END] "\du"

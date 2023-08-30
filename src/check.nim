@@ -19,7 +19,7 @@ if paramCount() > 0:
   let parameter1 = paramStr(1)
   var descriptionName: string
   case parameter1:
-    of "postgres":
+    of "postgres", "psql":
       descriptionName = "postgresql.txt"
     of "link":
       descriptionName = "ln.txt"
