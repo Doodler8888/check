@@ -10,7 +10,16 @@
 
 
 
-   [BLUE]1.The -d:release flag tells nim to compile in release mode, which applies
+[GREEN]   - Compiling for a telegram bot:
+[RED]     nim c -d:ssl -r [END]botname.nim [BLUE]|[2]
+
+
+
+   [BLUE]1.The [RED]-d:release[END] [BLUE]flag tells nim to compile in release mode, which applies
      optimizations and omits debugging information. this makes the resulting
      binary faster and smaller.
    
+   [BLUE]2.The [RED]-d:ssl[END] [BLUE]flag in Nim's compiler options stands for "define symbol". 
+     The [RED]-d[END] [BLUE]flag is a way to define conditional compilation symbols, essentially 
+     setting a compiler directive that can enable or disable certain features or 
+     behaviors in the code.
